@@ -2,7 +2,7 @@
 title: "Better JavaScript with ES6, Part 1"
 layout: post
 date: 2016-08-23 15:52
-image: /assets/images/js-with-es6.png
+image: assets/images/js-with-es6.png
 headerImage: true
 tag:
   - JavaScript
