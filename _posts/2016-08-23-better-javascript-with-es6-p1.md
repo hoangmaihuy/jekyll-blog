@@ -15,7 +15,7 @@ author: hoangmaihuy
 description: ES6 new features
 ---
 
-## Introduction
+### Introduction
 
 Với sự xuất hiện của ES2015 và Node.js hỗ trợ rất nhiều tính năng mới của nó, chúng ta hoàn toàn có thể nói rằng: *The Future is Upon Us*.
 
@@ -30,7 +30,8 @@ Bài viết này sẽ điểm qua 3 tính năng phổ biến của ES2015 có s�
 Let's get to it.
 
 ---
-## Block Scope with `let` and `const`
+
+### Block Scope with `let` and `const`
 
 **Scope** là phạm vi trong chương trình mà biến (variables) tồn tại. Nói cách khác, nó là một tập quy tắc xác định ta được phép sử dụng biến đã được khai báo ở những chỗ nào.
 
@@ -90,7 +91,7 @@ Một số điểm cần chú ý.
 1. *Phải* gán giá trị cho biến const khi tạo chúng, không được phép khai báo trước rồi mới gán giá trị sau.
 2. *Không thể* thay đổi giá trị của biến `const` sau khi tạo. Nếu bạn thử sẽ bị lỗi `TypeError`.
 
-## `LET` & `CONST`: WHO CARES?
+### `LET` & `CONST`: WHO CARES?
 
 Chúng ta đã quá quen thuộc với `var` và giờ có thể bạn đang tự hỏi mình có *really need* `let` và `const` không.
 
@@ -109,19 +110,19 @@ var languages = ['Danish', 'Norwegian', 'Swedish'];
 
 // Pollutes global namespace. Ew!
 for (var i = 0; i < languages.length; i += 1) {
-    console.log(`${languages[i]} is a Scandinavian language.`);
+    console.log('${languages[i]} is a Scandinavian language.');
 }
 
 console.log(i); // 4
 
 for (let j = 0; j < languages.length; j += 1) {
-    console.log(`${languages[j]} is a Scandinavian language.`);
+    console.log('${languages[j]} is a Scandinavian language.');
 }
 
 try {
     console.log(j); // Reference error
 } catch (err) {
-    console.log(`You got a ${err}; no dice.`);
+    console.log('You got a ${err}; no dice.');
 }
 {% endhighlight %}
 
@@ -152,7 +153,8 @@ Vòng lặp đầu tiên chạy đúng như những gì bạn nghĩ. Cái dướ
 Quyền lựa chọn nằm ở bạn, hãy cẩn thận.
 
 ---
-## The Quirks of Dynamic `this`
+
+### The Quirks of Dynamic `this`
 
 `this` trong JavaScript vẫn nổi tiếng trong việc có thể làm mọi thứ trừ những thứ bạn thực sự muốn nó làm.
 
@@ -194,7 +196,7 @@ Nếu như function bên trong không gán giá trị `this` riêng của chúng
 
 Code sẽ trở nên gọn gàng hơn rất nhiều nếu ta có cấu trúc này.
 
-## LEXICAL `THIS` WITH ARROW FUNCTIONS
+### LEXICAL `THIS` WITH ARROW FUNCTIONS
 
 Trong ES2015, chúng ta có. Arrow functions không trói buộc giá trị của `this`, cho phép ta sử dụng như lexical binding của `this`. Ta có thể viết lại code trên như sau.
 
@@ -247,7 +249,8 @@ console.log(languages_lower); // ["spanish", "french", "italian", "german", "pol
 Bạn có thể tìm hiểu thêm ở [MDN docs on arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
 
 ---
-## Shorthand Properties & Methods
+
+### Shorthand Properties & Methods
 
 ES2015 cũng cung cấp một số cách mới để define properties và methods của objects.
 
@@ -482,7 +485,8 @@ Mọi thứ được nhắc đến bên trên về getters đều có thể áp 
 Không theo quy tắc sẽ throw an error.
 
 ---
-## Conclusion
+
+### Conclusion
 
 Tương lai của JavaScript đang diễn ra hôm nay, và đã đến lúc nắm bắt những gì mà nó mang lại. Trong bài viết này, chúng ta đã xem xét ba tính năng phổ biến của ES2015:
 
