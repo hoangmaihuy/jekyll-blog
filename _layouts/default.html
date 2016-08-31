@@ -26,7 +26,7 @@ layout: compress
 
 </head>
 <body>
-
+    {% include fb-root.html %}
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
             <div class="post">
@@ -46,7 +46,7 @@ layout: compress
 
     {% include analytics-google.html %}
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-
     <script src="{{ site.url }}/scripts/main.js"></script>
+    <script src="{{ site.url }}/scripts/fb.js"></script>
 </body>
 </html>
