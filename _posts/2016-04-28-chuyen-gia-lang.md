@@ -1,6 +1,6 @@
 ---
 title: "Chuyện già làng"
-layout: post
+layout: note
 date: 2016-04-28 21:00
 image: /assets/images/whale.jpg
 headerImage: true

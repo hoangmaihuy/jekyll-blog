@@ -29,7 +29,11 @@ layout: compress
     {% include fb-root.html %}
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
+          {% if page.notes %}
+            <div class="note">
+          {% else %}
             <div class="post">
+          {% endif %}
         {% else %}
             {% if showHeader != true %}
                 <div class="page {{ page.title | downcase }}">

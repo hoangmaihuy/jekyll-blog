@@ -1,6 +1,6 @@
 ---
 title: "Forrest Gump"
-layout: post
+layout: note
 date: 2016-07-14 21:00
 image: /assets/images/forrest-gump.jpg
 headerImage: true
@@ -13,7 +13,7 @@ notes: true
 author: hoangmaihuy
 ---
 > There is a pleasure in being mad which none but madman know.  
-> *- John Dryden*
+> John Dryden  
 
 Để tớ nói cho mà nghe: Forrest Gump đích thị là một thằng đần. À nói thế liệu có lộ quá không? Thôi để tớ kể tại sao tớ biết thằng Gump trước vậy.
 

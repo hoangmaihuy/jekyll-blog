@@ -1,6 +1,6 @@
 # main text of home
 name: Mai Huy Hoàng
-bio: Slapping the keyboard until something good happens
+bio: < Slapping the keyboard until something good happens />
 
 # twitter summary info
 description: A simple blog about coding building on top of Jekyll and Indigo template
